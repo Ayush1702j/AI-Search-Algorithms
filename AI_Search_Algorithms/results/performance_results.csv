@@ -1,0 +1,10 @@
+Problem,Algorithm,Success,Execution_Time_ms,Nodes_Explored,Nodes_Generated,Path_Length,Path_Cost,Iterations,Final_Conflicts,Assignments,Backtracks
+8-Puzzle,BFS,True,0.1457,9,16,2,2,,,,
+8-Puzzle,DFS,True,72.0974,16611,16644,50,50,,,,
+8-Puzzle,UCS,True,0.1501,9,16,2,2,,,,
+8-Puzzle,Greedy Best First,True,0.1216,3,7,2,2,,,,
+8-Puzzle,A*,True,0.1279,3,7,2,2,,,,
+8-Queens,Hill Climbing,True,30.7387,,,,,57,0,,
+8-Queens,Simulated Annealing,True,9.9539,,,,,1316,0,,
+8-Queens,Backtracking,True,0.4295,,,,,,,876,105
+8-Queens,Forward Checking,True,0.4782,,,,,,,88,45

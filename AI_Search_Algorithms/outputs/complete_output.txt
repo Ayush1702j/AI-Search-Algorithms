@@ -1,0 +1,123 @@
+AI SEARCH ALGORITHMS - PERFORMANCE EVALUATION
+======================================================================
+
+8-PUZZLE RESULTS
+----------------------------------------------------------------------
+
+Algorithm: BFS
+Success: True
+Execution Time: 0.1457 ms
+Nodes Explored: 9
+Nodes Generated: 16
+Path Length: 2
+Path Cost: 2
+Details: 
+Moves: DOWN -> RIGHT
+
+Algorithm: DFS
+Success: True
+Execution Time: 72.0974 ms
+Nodes Explored: 16611
+Nodes Generated: 16644
+Path Length: 50
+Path Cost: 50
+Details: Depth limit=50
+Moves: UP -> LEFT -> DOWN -> DOWN -> RIGHT -> UP -> UP -> LEFT -> DOWN -> DOWN -> RIGHT -> UP -> UP -> LEFT -> DOWN -> DOWN -> RIGHT -> UP -> UP -> LEFT -> DOWN -> DOWN -> RIGHT -> UP -> UP -> LEFT -> DOWN -> RIGHT -> UP -> LEFT -> DOWN -> DOWN -> RIGHT -> RIGHT -> UP -> UP -> LEFT -> LEFT -> DOWN -> RIGHT -> UP -> RIGHT -> DOWN -> LEFT -> LEFT -> UP -> RIGHT -> DOWN -> RIGHT -> DOWN
+
+Algorithm: UCS
+Success: True
+Execution Time: 0.1501 ms
+Nodes Explored: 9
+Nodes Generated: 16
+Path Length: 2
+Path Cost: 2
+Details: 
+Moves: DOWN -> RIGHT
+
+Algorithm: Greedy Best First
+Success: True
+Execution Time: 0.1216 ms
+Nodes Explored: 3
+Nodes Generated: 7
+Path Length: 2
+Path Cost: 2
+Details: Heuristic: Manhattan Distance
+Moves: DOWN -> RIGHT
+
+Algorithm: A*
+Success: True
+Execution Time: 0.1279 ms
+Nodes Explored: 3
+Nodes Generated: 7
+Path Length: 2
+Path Cost: 2
+Details: f(n) = g(n) + h(n); h = Manhattan Distance
+Moves: DOWN -> RIGHT
+
+
+8-QUEENS RESULTS
+----------------------------------------------------------------------
+
+Algorithm: Hill Climbing
+Success: True
+Execution Time: 30.7387 ms
+Iterations: 57
+Final Conflicts: 0
+
+Board:
+. Q . . . . . .
+. . . . . . . Q
+. . . . . Q . .
+Q . . . . . . .
+. . Q . . . . .
+. . . . Q . . .
+. . . . . . Q .
+. . . Q . . . .
+
+Algorithm: Simulated Annealing
+Success: True
+Execution Time: 9.9539 ms
+Iterations: 1316
+Final Conflicts: 0
+
+Board:
+. . Q . . . . .
+. . . . . Q . .
+. . . . . . . Q
+Q . . . . . . .
+. . . Q . . . .
+. . . . . . Q .
+. . . . Q . . .
+. Q . . . . . .
+
+Algorithm: Backtracking
+Success: True
+Execution Time: 0.4295 ms
+Assignments: 876
+Backtracks: 105
+
+Board:
+Q . . . . . . .
+. . . . Q . . .
+. . . . . . . Q
+. . . . . Q . .
+. . Q . . . . .
+. . . . . . Q .
+. Q . . . . . .
+. . . Q . . . .
+
+Algorithm: Forward Checking
+Success: True
+Execution Time: 0.4782 ms
+Assignments: 88
+Backtracks: 45
+
+Board:
+Q . . . . . . .
+. . . . Q . . .
+. . . . . . . Q
+. . . . . Q . .
+. . Q . . . . .
+. . . . . . Q .
+. Q . . . . . .
+. . . Q . . . .

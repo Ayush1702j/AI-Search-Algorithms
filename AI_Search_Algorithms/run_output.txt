@@ -1,0 +1,47 @@
+Running search algorithm evaluation...
+
+================================================================================
+AI SEARCH ALGORITHMS - PERFORMANCE EVALUATION
+================================================================================
+
+8-PUZZLE RESULTS
+--------------------------------------------------------------------------------
+Algorithm                 Time(ms)    Explored      Cost    Solved
+BFS                         0.0396           9         2      True
+DFS                        23.9486       16611        50      True
+UCS                         0.0392           9         2      True
+Greedy Best First           0.0313           3         2      True
+A*                          0.0273           3         2      True
+
+8-QUEENS RESULTS
+--------------------------------------------------------------------------------
+Algorithm                 Time(ms)  Iterations   Conflicts    Solved
+Hill Climbing               8.6095          57           0      True
+Simulated Annealing         4.8334        1316           0      True
+Backtracking                0.2486           -           -      True
+Forward Checking            0.3216           -           -      True
+
+CSP DETAILS
+--------------------------------------------------------------------------------
+Backtracking: Assignments=876, Backtracks=105, Time=0.2486 ms
+Forward Checking: Assignments=88, Backtracks=45, Time=0.3216 ms
+
+Files generated:
+- /mnt/data/AI_Search_Algorithms/outputs/complete_output.txt
+- /mnt/data/AI_Search_Algorithms/results/performance_results.csv
+- /mnt/data/AI_Search_Algorithms/graphs/execution_time.png
+- /mnt/data/AI_Search_Algorithms/graphs/nodes_explored.png
+- /mnt/data/AI_Search_Algorithms/graphs/path_cost.png
+- /mnt/data/AI_Search_Algorithms/graphs/local_search_conflicts.png
+- /mnt/data/AI_Search_Algorithms/graphs/csp_assignments.png
+
+Spreadsheet runtime warmup failed during python startup
+Traceback (most recent call last):
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/patches/warm_spreadsheet_runtime_on_startup.py", line 26, in warm_spreadsheet_runtime_on_startup
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/spreadsheet_warmup.py", line 785, in warm_spreadsheet_runtime
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/spreadsheet_warmup.py", line 720, in _warm_feature_flows
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/spreadsheet_warmup.py", line 704, in _warm_collaboration_flows
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/generated/interface/models.py", line 32317, in hydrate_crdt_from_proto
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/rpc/remote.py", line 749, in __call__
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/rpc/client.py", line 150, in call
+artifact_tool.rpc.client.RemoteError: hydrateCrdtFromProto requires an empty collaborative document.
